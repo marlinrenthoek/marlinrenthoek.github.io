@@ -751,9 +751,9 @@ body {
 }
 
 /*=========================для Мобильных устройств===================*/
-/*
+
 @media handheld and (min-width: 460px) and (min-height: 960px) { 
-*/
+
   body {
     width: 375px;
     padding-top: 12px;
