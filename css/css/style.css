@@ -941,9 +941,10 @@ body {
   .features__navigation-list-mobile {
     display: block;
 	padding: 8px 15px;
-    background-color: #f7f7f7;
+    background-color: #ffd93e;
     border-radius: 20px;
-	outline: none;
+	border: 0;
+	appearance: none;
   }
   
   .favorites {
