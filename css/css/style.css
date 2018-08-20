@@ -767,6 +767,15 @@ body {
     padding-right: 20px;
     margin: 0 auto;
   }
+    
+  .mobile-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
 
   .main-header {
 
@@ -1066,50 +1075,52 @@ body {
 
   
   .popup {
-
-    top: 50%;
-    left: 50%;
+	display: none;
+	width: 100%;
+    top: 0;
+    left: 0;
+	padding: 20px;
+    margin: 0;
     z-index: 15;
-    padding: 21px;
-    padding-top: 20px;
-    padding-bottom: 26px;
-    margin-top: -260px;
-    margin-left: -315px;
   }
 
+  .popup-show {
+    display: block;	
+  }
   
   .popup-container {
     width: auto;
-
-    padding: 0;
-    margin-bottom: 15px;
-
+    padding: 20px;
+    padding-bottom: 25px;
+    
+  }
+  
+  .popup-header-container {
+	margin-bottom: 10px;
+    padding-right: 0;
+    background-position: right top;
+    background-size: 40px 44px;
+  }
+  
+  .popup-header {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
   }
   
   .temp-on-container {
     background-image: none;
   }
 
-  .popup-header-container {
 
-    padding-right: 0;
-
-    background-position: right top;
-    background-size: 40px 44px;
-  }
-  
-  .popup-header {
-    margin-bottom: 14px;
-    font-size: 18px;
-    line-height: 21px;
-  }
-  
+    
   .popup-value {
     display: none;
   }
 
   .popup-status {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     font-size: 12px;
     line-height: 14px;
 
@@ -1190,7 +1201,7 @@ body {
   }
 
   .popup__button {
-    width: 307px;
+    width: 1;
     height: 60px;
     padding-top: 21px;
     padding-bottom: 18px;
@@ -1206,12 +1217,17 @@ body {
     padding-right: 13px;
   }
     
+  .popup__btn-label:last-child {
+    margin-bottom: 0;
+  }
+  
   .popup__label {
     width: 100%;
     padding-top: 7px;
     padding-bottom: 8px;
     padding-left: 13px;
     padding-right: 13px;
+	font-weight: normal;
 
   }
   
