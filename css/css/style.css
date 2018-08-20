@@ -1201,7 +1201,7 @@ body {
   }
 
   .popup__button {
-    width: 1;
+    width: 100%;
     height: 60px;
     padding-top: 21px;
     padding-bottom: 18px;
