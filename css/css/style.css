@@ -400,7 +400,7 @@ body {
 }
 
 .favorites__item:nth-child(3n) {
-  margin-right: 15px;  
+  margin-right: 0;  
 }
 
 .features {
@@ -933,10 +933,6 @@ body {
   .item-block {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-  }
-
-  .item-block:nth-child(3n) {
-    margin-right: 0;
   }
   
   .icon {
