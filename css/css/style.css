@@ -936,7 +936,7 @@ body {
   }
 
   .item-block:nth-child(3n) {
-    margin-right: 17px;
+    margin-right: 0;
   }
   
   .icon {
@@ -989,7 +989,7 @@ body {
   }
   
   .favorites__item:nth-child(3n) {
-    margin-right: 0;  
+    margin-right: 15px;  
   }
      
   .features {
