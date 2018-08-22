@@ -1,6 +1,5 @@
 var link = document.querySelector(".item-block");
 var popup = document.querySelector(".popup");
-//var currentPopup = document.querySelector(".popup-show");
 var close = document.querySelector(".popup-close-button");
 var overlay = document.querySelector(".popup-overlay");
 
@@ -34,6 +33,7 @@ overlay.addEventListener("click", function (evt) {
 
 var eveDeg = document.querySelector(".eve-deg");
 var eveDegPopup = document.querySelector(".eve-deg-popup");
+var eveDegClose = document.querySelector(".eve-deg-cls-btn");
 
 eveDeg.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -57,8 +57,15 @@ window.addEventListener("keydown", function(evt) {
   }
 });
 
+eveDegClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("popup-show");
+  overlay.classList.remove("popup-overlay-show");
+});
+
 var xmiBulb = document.querySelector(".xmi-bulb");
 var xmiBulbPopup = document.querySelector(".xmi-bulb-popup");
+var xmiBulbClose = document.querySelector(".xmi-bulb-cls-btn");
 
 xmiBulb.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -66,7 +73,7 @@ xmiBulb.addEventListener("click", function (evt) {
   overlay.classList.add("popup-overlay-show");
 }); 
 
-close.addEventListener("click", function (evt) {
+xmiBulbClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   xmiBulbPopup.classList.remove("popup-show");
   overlay.classList.remove("popup-overlay-show");
@@ -90,6 +97,7 @@ overlay.addEventListener("click", function (evt) {
 
 var wrmFlr = document.querySelector(".wrm-flr");
 var wrmFlrPopup = document.querySelector(".wrm-flr-popup");
+var wrmFlrClose = document.querySelector(".wrm-flr-cls-btn");
 
 wrmFlr.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -97,7 +105,7 @@ wrmFlr.addEventListener("click", function (evt) {
   overlay.classList.add("popup-overlay-show");
 }); 
 
-close.addEventListener("click", function (evt) {
+wrmFlrClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   wrmFlrPopup.classList.remove("popup-show");
   overlay.classList.remove("popup-overlay-show");
