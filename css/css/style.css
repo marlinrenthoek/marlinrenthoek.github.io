@@ -998,6 +998,7 @@ body {
   }
    
   .features-container {
+	position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1008,12 +1009,26 @@ body {
     padding-top: 3px;
   }
 
+   .features__navigation::after {
+    position: absolute;
+	content: "";
+    bottom: 25px;
+    right: 12px;
+	width: 8px;
+	height: 8px;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #333;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+  }	
   
   .features__navigation-list {
 	display: none;
   }
   
   .features__navigation-list-mobile {
+	position: relative;
     display: block;
 	padding: 8px 15px;
     background-color: #ffd93e;
@@ -1022,7 +1037,7 @@ body {
 	-webkit-appearance: none;
 	   -moz-appearance: none;
 	        appearance: none;
-  } 
+  }
   
   .features__navigation-item {
     margin-right: 7px;
