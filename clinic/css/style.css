@@ -193,9 +193,6 @@ body {
 }
 
 .personal__photo {
-  position: absolute;
-  right: 10px;
-  top: -4px;
   padding: 1px;
   border: 1px solid #e37f83;
 }
@@ -235,7 +232,7 @@ body {
 }
 
 .contact-form__input {
-  width: 343px;
+  width: 340px;
   padding: 13px 16px;
   margin-bottom: 19px;
   border: 0;
