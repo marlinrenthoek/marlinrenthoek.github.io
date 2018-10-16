@@ -724,6 +724,7 @@ body {
   }
 
   .personal__photo {
+  position: relative;
   padding: 1px;
   border: 1px solid #e37f83;
   }
