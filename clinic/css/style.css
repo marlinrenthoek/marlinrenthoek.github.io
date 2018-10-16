@@ -1,0 +1,744 @@
+@font-face {
+  font-family: "Open Sans Hebrew";
+  src: url("../fonts/OpenSansHebrew-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Hebrew";
+  src: url("../fonts/OpenSansHebrew-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Hebrew";
+  src: url("../fonts/OpenSansHebrew-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  width: 1920px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  direction: rtl;
+  font-family: "Open Sans Hebrew", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+  background-color: #5a5a5a
+}
+
+.site-navigation,
+.site-navigation {
+  background-repeat: no-repeat;
+}
+
+.site-navigation {
+  width: 186px;
+  height: 47px;
+  background-image: url(../img/site-navigation.jpg);
+}
+.user-navigation {
+  width: 699px;
+  height: 47px;
+  background-image: url(../img/user-navigation.jpg);
+}
+
+.site-navigation__list,
+.user-navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-header {
+  padding: 0 5.3%;
+}
+
+.main-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5px;
+  margin-bottom: 7px;
+}
+
+.header__logo {
+  margin-left: 55px;
+}
+
+.header__logo-text {
+  -webkit-transform: translateX(4px) translateY(8px);
+      -ms-transform: translateX(4px) translateY(8px);
+          transform: translateX(4px) translateY(8px);
+}
+
+.header__caption {
+  margin: 0;
+  padding: 7px 0;
+  padding-bottom: 7px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 54px;
+  color: #9a9897;
+  border-bottom: 9px solid #0b92d2;
+}
+
+.main {
+  padding-right: 10.2%;
+  padding-left: 5.2%;
+}
+
+.title {
+  padding-top: 3px;
+  padding-bottom: 14px;
+  margin-bottom: 63px;
+  border-bottom: 2px solid #c2c2c2;
+}
+
+.title__navigation {
+  margin-bottom: 21px;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-right: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-left: 15px;
+}
+.breadcrumbs__item::before {
+  position: absolute;
+  top: 9px;
+  left: -11px;
+  content: ">";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs__item:last-child {
+  margin-left: 0;
+}
+
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #000;
+  word-wrap: none;
+}
+.--active {
+  font-weight: bold;
+}
+
+.association-info {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 24px;
+  padding-right: 90px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #267dbf;
+  background-image: url(../img/surgery-union-logo.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.title__header {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+} 
+
+.profession {
+  margin: 0;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.personal-page {
+  position: relative;
+  padding-left: 9.6%;
+  padding-right: 11.1%;
+}
+
+.personal__photo {
+  position: absolute;
+  right: 10px;
+  top: -4px;
+  padding: 1px;
+  border: 1px solid #e37f83;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 18px;
+  padding-right: 2.95%;
+  margin-bottom: 26px;
+}
+
+.contact-form__header {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.contact-form-container {
+  margin-bottom: 20px;
+}
+
+.contact-form__label {
+  margin-left: 26px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+
+
+.contact-form__label:last-child {
+  margin-left: 0;
+}
+
+.contact-form__input {
+  width: 343px;
+  padding: 13px 16px;
+  margin-bottom: 19px;
+  border: 0;
+  border-bottom: 2px solid #c5c5c5;
+}
+
+.contact-form__input,
+.contact-form__input::-webkit-input-placeholder,
+.contact-form__textarea,
+.contact-form__textarea::-webkit-input-placeholder {
+  font-family: "Open Sans Hebrew";
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.contact-form__input,
+.contact-form__input:-ms-input-placeholder,
+.contact-form__textarea,
+.contact-form__textarea:-ms-input-placeholder {
+  font-family: "Open Sans Hebrew";
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.contact-form__input,
+.contact-form__input::-ms-input-placeholder,
+.contact-form__textarea,
+.contact-form__textarea::-ms-input-placeholder {
+  font-family: "Open Sans Hebrew";
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.contact-form__input,
+.contact-form__input::placeholder,
+.contact-form__textarea,
+.contact-form__textarea::placeholder {
+  font-family: "Open Sans Hebrew";
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.btn-txtarea-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form__textarea {
+  width: 100%;
+  height: 171px;
+  padding: 5px 11px;
+  border: 2px solid #c5c5c5;
+}
+
+.contact-form__submit-button {
+  padding-top: 17px;
+  padding-left: 35px;
+  padding-right: 36px;
+  padding-bottom: 22px;
+  margin-right: 12px;
+  margin-bottom: 29px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fffefe;
+  background-color: #267dbf;
+  border: 0;
+
+}
+
+.personal-page__list {
+  margin: 0;
+  padding-right: 0;
+  list-style: none;
+}
+
+.personal__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e37f83;
+}
+
+.personal__item:nth-child(2) {
+  padding-bottom: 29px;
+  margin-bottom: 34px;
+}
+
+.personal__item:nth-child(3) {
+  margin-bottom: 39px;
+  padding-bottom: 30px;
+}
+
+.personal__item:nth-child(4) {
+  margin-bottom: 30px;
+  padding-bottom: 41px;
+}
+
+.personal__item:nth-child(5) {
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+}
+
+.personal__item:nth-child(6) {
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+}
+
+.personal__item:nth-child(7) {
+  margin-bottom: 30px;
+  padding-bottom: 23px;
+}
+
+.personal__item:last-child {
+  margin-bottom: 0;
+  border: 0;
+}
+
+.personal-item__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 24px;
+  width: 50%;
+} 
+
+.insurance {
+  padding: 0 14px;
+}
+
+.funds {
+  padding: 0px 33px;
+}
+
+.receiving,
+.receiving-2
+ {
+  padding: 0px 16px;
+}
+
+.age-groups {
+  padding: 0 12px;
+}
+
+.publications {
+  height: 217px;
+  padding: 0 22px;
+}
+
+.appointments {
+  height: 220px;
+  padding: 0 14px;
+  border-left: 1px solid #9a9897;
+}
+
+
+.main-areas,
+.funds,
+.publications {
+  border-right: 1px solid #9a9897;
+}
+
+.personal-item__header {
+  position: relative;
+  margin: 0;
+  padding: 7px 29px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #9a9897;
+  border-bottom: 2px dotted #eeeeee;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.details__header {
+  background-image: url(../img/icon-snake.png);
+}
+
+.main-areas__header {
+  background-image: url(../img/icon-patch.png);
+}
+
+.receiving__header,
+.receiving-2__header {
+  padding-right: 27px;
+  background-image: url(../img/icon-calendar.png);
+}
+
+.reception__header,
+.reception-2__header {
+  padding-right: 33px;
+  background-image: url(../img/icon-book.png);
+}
+
+.insurance__header {
+  background-image: url(../img/icon-sheet.png);
+}
+
+.funds__header {
+  background-image: url(../img/icon-heart.png);
+}
+
+.public__header {
+  background-image: url(../img/icon-building.png);
+}
+
+.age-groups__header {
+  background-image: url(../img/icon-faces.png);
+}
+
+.publications__header {
+  background-image: url(../img/icon-pencil.png);
+}
+
+.appointments__header {
+  background-image: url(../img/icon-medail.png);
+}
+
+.personal-item__table {
+  width: auto;
+  margin-right: 28px;
+  border-collapse: collapse;
+  line-height: 31px;
+}
+
+.reception__table {
+  margin-right: 32px;
+}
+
+.details__table {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.public {
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 36px;
+}
+
+.personal-item__text {
+  margin: 0;
+  padding: 0 32px;
+  line-height: 34px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.reception__text {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.reception-2__text {
+  line-height: 35px;
+}
+
+.public__text {
+  line-height: 35px;
+}
+
+.smaller-font {
+  font-size: 18px;
+}
+
+.funds__text {
+  line-height: 35px;
+}
+
+.insurance__text {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.age-groups__text {
+  line-height: 33px;
+  font-size: 25px;
+}
+
+.publications__text {
+  font-size: 20px;
+}
+
+.link-description {
+  font-size: 18px;
+}
+
+.main-footer {
+  padding: 0 5.4%;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+.footer__info-list {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0 18.7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  color: #bebebe;
+  white-space: nowrap;
+  list-style: none
+}
+
+.ima {
+  margin-left: 21.17%;
+}
+
+.profile {
+  margin-left: 22.46%;
+}
+
+.info-list__item-header {
+  margin: 0;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.ima__header {
+  background-image: url(../img/ima_icon.png);
+}
+
+.profile__header {
+  background-image: url(../img/profile_icon.png);
+}
+
+.link__header {
+  background-image: url(../img/link_icon.png);
+}
+
+.ima__list,
+.profile__list,
+.link__list {
+  list-style: inside;
+  padding-right: 40px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #bcbcbc;
+}
+
+.social-media__text {
+  margin: 0;
+  margin-right: 36px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.social-media__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 3px 24px;
+}
+
+.social-media__item {
+  display: block;
+  margin-left: 26px;
+}
+
+.social-media__item:last-child {
+  margin-left: 0;
+}
+
+.social-media__link {
+  display: block;
+  width: 27px;
+  height: 26px;
+  background-repeat: no-repeat;
+}
+
+.share-link {
+  background-image: url(../img/share-link-icon.png);
+}
+
+.mail-link {
+  background-image: url(../img/mail-link-icon.png);
+}
+
+.messenger-link {
+  background-image: url(../img/messenger-link-icon.png);
+}
+
+.youtube-link {
+  background-image: url(../img/youtube-link-icon.png);
+}
+
+.facebook-link {
+  background-image: url(../img/facebook-link-icon.png);
+}
+
+.twitter-link {
+  background-image: url(../img/twitter-link-icon.png);
+}
+
+.app-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-list__link {
+  display: block;
+  width: 116px;
+  height: 33px;
+  background-repeat: no-repeat;
+}
+
+.google-play-link {
+  background-image: url(../img/google-play.png);
+}
+
+.app-store-link {
+  background-image: url(../img/app-store.png);
+}
+
+.app-list__item {
+  margin-left: 22px;
+}
+
+.additional-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.additional-info__text {
+  margin: 0;
+}
+
+@media (max-width: 1388px) {
+  body {
+    width: auto;
+  }
+
+  .personal__photo {
+  padding: 1px;
+  border: 1px solid #e37f83;
+  }
+
+  .personal-page {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-form__input {
+    width: 224px;
+  }
+
+  .contact-form-container {
+    margin-right: 18px;
+  }
+}

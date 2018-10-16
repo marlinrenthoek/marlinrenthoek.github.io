@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Clinic</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header-menu">
+        <nav class="site-navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#" aria-label="home"></a>
+            </li>
+            <li>
+              <a class="site-navigation__link" href="#" aria-label="help"></a>
+            </li>
+            <li>
+              <p class="site-navigation__text"></p> 
+            </li>
+          </ul>
+        </nav>
+        <nav class="user-navigation">
+          <ul class="user-navigation__list">
+            <li>
+              <p class="user-navigation__text"></p> 
+            </li>
+            <li>
+              <p class="user-navigation__text"></p> 
+            </li>            
+            <li class="user-navigation__item">
+              <a class="user-navigation__link share-link" href="#" aria-label="share"></a>
+            </li>
+            <li>
+              <a class="user-navigation__link -link" href="#" aria-label=""></a>
+            </li>
+            <li>
+              <a class="user-navigation__link enter-link" href="#" aria-label="enter"></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <header class="main-header">
+      <div class="main-header-container">
+        <img class="header__logo" src="img/clinic-logo.png" width="158" height="80" alt="clinic-logo">
+        <img class="header__logo-text" src="img/logo-text.png" width="346" height="64" alt="clinic-logo-text">
+      </div>
+      <p class="header__caption">מפתח הרופאים הגדול והמקצועי</p>
+    </header>
+    <main class="main">
+      <section class="title">
+        <nav class="title__navigation breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">עמוד ראשי</a>
+            </li>
+            <li>  
+              <a class="breadcrumbs__link --active">ד"ר אטיאס ברזילאי-כהן</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="title__text association-info">איגוד הכירורגים בישראל</p>
+        <h1 class="title__header">ד”ר אטיאס ברזילאי-כהן</h1>
+        <p class="title__text profession">כירורגיה</p>
+      </section>
+      <section class="personal-page">
+        <form class="personal-page__form contact-form">
+          <img class="personal__photo" src="img/photo.jpg" width="174" height="174" alt="personal photo">
+          <div class="contact-form-container">
+            <h2 class="contact-form__header">פנה/י ללא התחייבות לד"ר אטיאס ברזילאי-כהן</h2>
+            <div class="contct-form-wrapper">
+              <label class="contact-form__label">
+                <input class="contact-form__input name-field" type="text" placeholder="*שם מלא" required>
+              </label>
+              <label class="contact-form__label">
+                <input class="contact-form__input phone-field" type="text" placeholder="*טלפון" required>
+              </label>
+              <label class="contact-form__label">
+                <input class="contact-form__input mail-field" type="text" placeholder="*דוא”ל" required>
+              </label>  
+            </div>
+            <div class="contct-form-wrapper2"> 
+              <label class="contact-form__txt-label">
+                <textarea class="contact-form__textarea" placeholder="*פירוט הפנייה"></textarea>
+              </label>
+            </div>
+          </div>
+          <button class="contact-form__submit-button" type="submit">שלח/י</button>
+        </form>
+        <ul class="personal-page__list">
+          <li class="personal__item">
+            <div class="personal-item__container details">
+              <h3 class="personal-item__header details__header">פרטים מקצועיים</h3>
+              <table class="personal-item__table details__table">
+                <tr class="details__row">
+                  <td class="details__text bold">מקצוע:</td>
+                  <td class="details__text">אונקולוגיה</td>
+                </tr>
+                <tr class="details__row">
+                  <td class="details__text bold">סטטוס מקצועי:&nbsp;</td>
+                  <td class="details__text">מומחה</td>
+                </tr>
+                <tr>
+                  <td class="details__text bold">מקצוע:</td>
+                  <td class="details__text">רפואה פנימית</td>
+                </tr>
+                <tr>
+                  <td class="details__text bold">סטטוס מקצועי:</td>
+                  <td class="details__text">מומחה</td>
+                </tr>
+                <tr>
+                  <td class="details__text bold">שפות שירות:</td>
+                  <td class="details__text">עברית, אנגלית, רוסית</td>
+                </tr>
+              </table>
+            </div>
+            <div class="personal-item__container main-areas">
+              <h3 class="personal-item__header main-areas__header">תחומי עיסוק עיקריים</h3>
+              <p class="personal-item__text">ניתוחים כירורגיים</p>
+              <p class="personal-item__text">בדיקות מעקב</p>
+              <p class="personal-item__text">כתיבת חוות דעת משפטיות עבור בתי משפט, עורכי דין וחברות ביטוח</p>
+              <p class="personal-item__text">בדיקות תקופתיות</p>
+            </div>
+          </li>
+          <li class="personal__item">
+            <div class="personal-item__container receiving">
+              <h3 class="personal-item__header receiving__header">קבלת קהל מרפאה 1</h3>
+              <p class="personal-item__text">הרופא/ה מקבל/ת קהל במקומות המצוינים מטה על פי תיאום מראש:</p>
+              <table class="personal-item__table receiving__tables">
+                <tr>
+                  <td class="receiving__text bold">כתובת המרפאה:</td>
+                  <td class="receiving__text">רחוב ויצמן 14, חדר 1213, תל אביב</td>
+                </tr>
+                <tr>
+                  <td class="receiving__text bold">נגישות:</td>
+                  <td class="receiving__text">המקום אינו מונגש</td>
+                </tr>
+              </table>
+            </div>
+            <div class="personal-item__container reception">
+              <h3 class="personal-item__header reception__header">שעות קבלת קהל ויצירת קשר</h3>
+              <table class="personal-item__table reception__table">
+                <tr>
+                  <td class="reception__text bold">יום א’</td>
+                  <td class="reception__text">08:00-11:00</td>
+                  <td class="reception__text">15:00-19:30</td>
+                </tr>
+                <tr>
+                  <td class="reception__text bold">יום ב’</td>
+                  <td class="reception__text">אין קבלת קהל</td>
+                </tr>
+                <tr>
+                  <td class="reception__text bold">אתר</td>
+                  <td class="reception__text">www.mirpaa.co.il</td>
+                </tr>
+                <tr>
+                  <td class="reception__text bold">טלפון</td>
+                  <td class="reception__text">052-6754449</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="personal__item">
+            <div class="personal-item__container receiving-2">
+              <h3 class="personal-item__header receiving-2__header">קבלת קהל מרפאה 2</h3>
+              <p class="personal-item__text">הרופא/ה מקבל/ת קהל במקומות המצוינים מטה על פי תיאום מראש:</p>
+              <table class="personal-item__table receiving-2__tables">
+                <tr>
+                  <td class="receiving-2__text bold">כתובת המרפאה:</td>
+                  <td class="receiving-2__text">אסותא הברזל 20</td>
+                </tr>
+                <tr>
+                  <td class="receiving-2__text bold">נגישות:</td>
+                  <td class="receiving-2__text">המקום אינו מונגש</td>
+                </tr>
+              </table>
+            </div>
+            <div class="personal-item__container reception-2">
+              <h3 class="personal-item__header reception-2__header">שעות קבלת קהל ויצירת קשר</h3>
+              <table class=" personal-item__table reception-2__table">
+                <tr>
+                  <td class="reception-2__text bold">יום א’</td>
+                  <td class="reception-2__text">08:00-11:00</td>
+                  <td class="reception-2__text">15:00-19:30</td>
+                </tr>
+                <tr>
+                  <td class="reception-2__text bold">יום ב’</td>
+                  <td class="reception-2__text">אין קבלת קהל</td>
+                </tr>
+                <tr>
+                  <td class="reception-2__text bold">אתר</td>
+                  <td class="reception-2__text">www.mirpaa.co.il</td>
+                </tr>
+                <tr>
+                  <td class="reception-2__text bold">טלפון</td>
+                  <td class="reception-2__text">052-6754449</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="personal__item">
+            <div class="personal-item__container insurance">
+              <h3 class="personal-item__header insurance__header">חברות ביטוח בהסדר</h3>
+              <table class="personal-item__table insurance__table">
+                <tr>
+                  <td class="insurance__text">כלל בריאות</td>
+                  <td class="insurance__text">איילון</td>
+                </tr>
+                <tr>
+                  <td class="insurance__text">מגדל</td>
+                  <td class="insurance__text">הכשרת היישוב</td>
+                </tr>
+                <tr>
+                  <td class="insurance__text">ביטוח ישיר</td>
+                  <td class="insurance__text">הראל</td>
+                </tr>
+                <tr>
+                  <td class="insurance__text">הפניקס</td>
+                </tr>
+              </table>
+            </div>
+            <div class="personal-item__container funds">
+              <h3 class="personal-item__header funds__header">קופות חולים בהסדר</h3>
+              <table class="personal-item__table funds__table">
+                <tr>
+                  <td class="funds__text">לאומית</td>
+                  <td class="funds__text">לאומית זהב</td>
+                </tr>
+                <tr>
+                  <td class="funds__text">מכבי</td>
+                  <td class="funds__text">מכבי מגן זהב</td>
+                </tr>
+                <tr>
+                  <td class="funds__text">מאוחדת</td>
+                  <td class="funds__text">מאוחדת עדיף</td>
+                </tr>
+                <tr>
+                  <td class="funds__text">לאומית</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="personal__item">
+            <div class="personal-item__container public">
+              <h3 class="personal-item__header public__header">עבודה במגזר הציבורי</h3>
+              <table class="personal-item__table public__table">
+                <tr>
+                  <td class="public__text smaller-font">הערה: להלן תוכלו לצפות במקומות העבודה של הרופא/ה במגזר הציבורי:</td>
+                </tr>
+                <tr>
+                  <td class="public__text"><span class="bold">מקום עבודה:</span>מרכז רפואי שערי צדק</td>
+                  <td class="public__text"><span class="bold">מחלקה/מרפאה:</span>כירורגיה כללית</td>
+                  <td class="public__text"><span class="bold">תפקיד:</span>מנהל מחלקה</td>
+                </tr>
+                <tr>
+                  <td class="public__text"><span class="bold">מקום עבודה:</span>שירותי בריאות כללית, מחוז חיפה וגליל מערבי</td>
+                  <td class="public__text"><span class="bold">מחלקה/מרפאה:</span>כירורגיה כללית</td>
+                  <td class="public__text"><span class="bold">תפקיד:</span>מנהל מחלקה</td>
+                </tr>
+                <tr>
+                  <td class="public__text"><span class="bold">מקום עבודה:</span>מרכז רפואי ברזילי </td>
+                  <td class="public__text"><span class="bold">מחלקה/מרפאה:</span>כירורגיה כללית</td>
+                  <td class="public__text"><span class="bold">תפקיד:</span>מנהל מחלקה</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="personal__item">
+            <div class="personal-item__container age-groups">
+              <h3 class="personal-item__header age-groups__header">התמחות לפי קבוצות גיל</h3>
+              <table class="personal-item__table age-groups__table">
+                <tr>
+                  <td class="age-groups__text">תינוקות</td>
+                </tr>
+                <tr>
+                  <td class="age-groups__text">ילדים</td>
+                </tr>
+                <tr>
+                  <td class="age-groups__text">מבוגרים</td>
+                </tr>
+              </table>
+            </div>
+            <div class="personal-item__container publications">
+              <h3 class="personal-item__header publications__header">פרסומים ומחקרים</h3>
+              <p class="personal-item__text publications__text bold">הרופא/ה פירסם את המחקרים והמאמרים הבאים</p>
+              <p class="personal-item__text publications__text link-description"><a class="publications__link" href="#">"הרפואה הציבורית לאן?"</a>, העלון לרפואה ציבורית, יוני 2018</p>
+            </div>
+          </li>
+          <li class="personal__item">
+            <div class="personal-item__container appointments">
+              <h3 class="personal-item__header appointments__header">תפקידים ומינויים בהר”י</h3>
+              <p class="personal-item__text appointments__text bold">הרופא/ה נבחר לכהן בתפקידים המפורטים להלן:</p>
+              <p class="personal-item__text appointments__text">מנהל מחלקת מתמחים</p>
+              <p class="personal-item__text appointments__text">יו”ר ועדת הבחירות המרכזית</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="footer__info-list info-list">
+        <li class="info-list__item ima">
+          <h2 class="info-list__item-header ima__header">ההסתדרות הרפואית בישראל</h2>
+          <ul class="ima__list">
+            <li class="ima__item">מהי הר"י</li>
+            <li class="ima__item">תקנון הר"י</li>
+            <li class="ima__item">ניירות עמדה</li>
+            <li class="ima__item">מוסדות הר"י</li>
+          </ul>
+        </li>
+        <li class="info-list__item profile">
+          <h2 class="info-list__item-header profile__header">אנחנו כאן בשבילך</h2>
+          <ul class="profile__list">
+            <li class="profile__item">טלפון: 03-6254854</li>
+            <li class="profile__item">info@ima.org.il מייל: </li>
+            <li class="profile__item">כתובתנו: ז’בוטינסקי 63, ר”ג</li>
+          </ul>
+        </li>
+        <li class="footer-list-container link">
+          <h2 class="info-list__item-header link__header">קישורים חשובים</h2>
+          <ul class="link__list">
+            <li class="link__item">פרסמו אצלנו</li>
+            <li class="link__item">אבטחת מידע</li>
+          </ul>
+        </li>
+      </ul>
+      <section class="social-media">
+        <p class="social-media__text">אתרי הר”י</p>
+        <p class="social-media__text">עקבו אחרינו</p>
+        <ul class="social-media__list">
+          <li class="social-media__item">
+            <a class="social-media__link share-link" href="#" aria-label="share"></a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link mail-link" href="#" aria-label="mail"></a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link messenger-link" href="#" aria-label="messenger"></a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link youtube-link" href="#" aria-label="youtube"></a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link facebook-link" href="#" aria-label="facebook">
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link twitter-link" href="#" aria-label="twitter"></a>
+          </li>
+        </ul>
+        <ul class="app-list">
+          <li class="app-list__item">
+            <a class="app-list__link google-play-link" href="#" aria-label="google-play"></a>
+          </li>
+          <li class="app-list__item">
+            <a class="app-list__link app-store-link" href="#" aria-label="app-store"></a>
+          </li>
+        </ul>
+      </section>
+      <section  class="additional-info">
+        <p class="additional-info__text">בוטינסקי 35 רמת גן, בניין התאומים 2 ק-11, ת.ד. 3566, מיקוד 5213604. טלפון: 03-6100444 פקס: 03-5753303  | </p>
+        <p class="additional-info__text">הבהרה משפטית. כל נושא המופיע באתר זה נועד להשכלה בלבד ואין לראות בו ייעוץ רפואי או משפטי. אין הר"י אחראית לתוכן המתפרסם באתר זה ולכל נזק שעלול להיגרם. כל הזכויות על המידע באתר שייכות להסתדרות</p>
+      </section>
+    </footer>
+  </body>
+</html>
